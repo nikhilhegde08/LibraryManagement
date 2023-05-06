@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library Management</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <form class="book-form">
+            <h2>My<span>Library</span>Book</h2>
+            <div class="book-item">
+                <label>Name of the Book</label>
+                <input type="text" id="bookname">
+            </div class="book-item">
+            <div class="book-item">
+                <label>ISBN</label>
+                <input type="text" id="isbn">
+            </div>
+            <div class="book-item">
+                <label>Author</label>
+                <input type="text" id="author">
+            </div>
+
+            <div class="book-item">
+                <input type="button" id="add" class="button " value="Add">
+            </div>
+        </form>
+
+        <div class="table">
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>ISBN</th>
+                        <th>Author</th>
+                        <th>-</th>
+                    </tr> 
+                </thead>
+                <tbody id="book-list"></tbody>
+            </table>
+        </div>
+
+        <span class="book-item" id="panel"></span>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
